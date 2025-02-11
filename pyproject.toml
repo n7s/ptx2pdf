@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ptxprint"
-dynamic = ["version"]
+version = "2.7.20"
 authors = [{name = "SIL Global"}]
 readme = "README.md"
 license = {file = "python/LICENSE.txt"}
@@ -39,7 +39,5 @@ where = ["python/lib"]
 [tool.bdist_wheel]
 universal = true
 
-[project.scripts]
-ptxprint = "ptxprint:main"
-pdfdiff = "pdfdiff:main"
-xdvitype = "xdvitype:main"
+[tool.setuptools]
+script-files = ["python/scripts/ptxprint", "python/scripts/pdfdiff", "python/scripts/xdvitype"]
