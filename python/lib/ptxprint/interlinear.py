@@ -43,7 +43,7 @@ class Interlinear:
         else:
             raise SyntaxError("Bad Reference {}".format(s))
 
-    def replaceindoc(self, doc, curref, lexemes, linelengths, mrk="+wit"):
+    def replaceindoc(self, doc, curref, lexemes, linelengths, mrk="+with"):
         lexemes.sort()
         adj = 0
         vend = (0, 0)

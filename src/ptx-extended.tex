@@ -102,7 +102,7 @@
 \NoTransparencyfalse
 \newcount\feintb@xnum
 \feintb@xnum=1
-\def\remove@transpancy#1 #2 #3|#4\E{\@lphacalc{#4}{#1} \@lphacalc{#4}{#2} \@lphacalc{#4}{#3}}
+\def\remove@transparency#1 #2 #3|#4\E{\@lphacalc{#4}{#1} \@lphacalc{#4}{#2} \@lphacalc{#4}{#3}}
 \def\@lphacalc#1#2{\strip@pt{\dimexpr #2\dimexpr #1 pt \relax + 1pt -\dimexpr #1 pt \relax\relax} }
 
 \addtoendhookstr{\ifinextended\errmessage{Reached end of book without finding \string\esbe.}\fi}{esbe check}
@@ -115,7 +115,7 @@
   \edef\thisRGB{#2}%
   \ifNoTransparency
     \ifdim 1pt = #1 pt \relax\else
-      \edef\thisRGB{\x@\remove@transpancy\thisRGB|\thisalpha\noexpand\E }%
+      \edef\thisRGB{\x@\remove@transparency\thisRGB|\thisalpha\noexpand\E }%
       \edef\thisalpha{1}%
       \MSG{* Transparency is disabled, anything behind transparent item will be hidden. #2 -> \thisRGB}%
     \fi
@@ -213,7 +213,7 @@
   \def\fig@lskip{0pt}\def\fig@rskip{0pt}%
   \dimen1=\ifnum \c@rrentcols=1 \textwidth \else \colwidth\fi
   \trace{sc}{sb@rinswidth (\the\c@rrentcols) \the\dimen1}%
-  %we need to distingiush between things like c,p,h which have sub-specifications and t, tl, tr, etc (which don't)
+  %we need to distinguish between things like c,p,h which have sub-specifications and t, tl, tr, etc (which don't)
   \x@\let\csname sb@onlypure-t\endcsname\tr@e
   \x@\let\csname sb@onlypure-b\endcsname\tr@e
   \let\@t@st\tempc
@@ -341,7 +341,7 @@
       %$\fi
       \x@\x@\x@\p@rseLoc\x@\tempa\tempb\end
       \ifx\tempa \pos@Side
-        \trace{e}{Forground picture will be \fgfigsp@c}%
+        \trace{e}{Foreground picture will be \fgfigsp@c}%
         \advance\dimen1 by -\dimen0
         \ifx\tempb\empty\message{No side defined for foreground image in sidebar class '\c@tegory'. Assuming outer.}%
           \let\tempb\@lignOuter
@@ -646,7 +646,7 @@
   \fi
 }
 
-\def\p@rsefigscale#1{%interpret bacground figure scale
+\def\p@rsefigscale#1{%interpret background figure scale
   \ifdim\wd\extb@x>0pt
     \dimen1=\wd\extb@x
   \fi
@@ -669,13 +669,13 @@
   \global\let\sb@rpos\localsb@rpos
   \ifhe@dings\endhe@dings\fi
   \ifdoingt@ble\endt@ble\fi% Sidebar end should close a table, too
-  \let\@fter@sbe\relax
+  \let\@after@sbe\relax
   \ifinextended
-    \let\@fter@sbe\@@sbe
+    \let\@after@sbe\@@sbe
   \else
     \let\c@t@gory=\empty \trace{e}{ebse called without esb}%
   \fi
-  \@fter@sbe
+  \@after@sbe
 }
 
 \newif\ifsb@rfillpage
@@ -963,7 +963,7 @@
           \global\setbox\extchunkb@x=\vsplit\extb@x to \dimen1
           \ifnum\badness>999999
             \setbox\extb@x=\box2
-            \advance\dimen1 by \baselineskip %Couldnt split, make the chunk bigger.
+            \advance\dimen1 by \baselineskip %Couldn't split, make the chunk bigger.
             \trace{e}{Chunk grown to \the\dimen1}%
         \@REPEAT
       }%
@@ -1292,7 +1292,7 @@
   \trace{e}{Figure #1|#2|#3|#4|#5}% #1 is filename (without quotes). #4, #5 are l/r skips.
   \dimen0=#3\relax
   \def\@fig@lskip{#4}\def\@fig@rskip{#5}%
-  \openin\t@stread="#1"\relax 
+  \opening\t@stread="#1"\relax 
    \ifeof\t@stread 
      \m@kepl@ceholder{\dimen0}{0.618 \dimen0}{#1}%
    \else\closein\t@stread

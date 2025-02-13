@@ -2833,7 +2833,7 @@ settings for a similar project.</property>
         <col id="1">id</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Portugese</col>
+        <col id="0" translatable="yes">Portuguese</col>
         <col id="1">pt</col>
       </row>
       <row>
@@ -3968,7 +3968,7 @@ indicate the kind of shrink or
 stretch that has been applied as well
 as the amount (thickness of line).
 
-These ajustment annotations are not
+These adjustment annotations are not
 part of the PDF, but are only overlaid
 on the text to help refine the layout.
 
@@ -8230,7 +8230,7 @@ always stay on the same line.</property>
 character can use between words is
 adjustable - and allows a greater degree
 of flexibility when trying to shrink or
-grow paragrahs when balancing pages.</property>
+grow paragraphs when balancing pages.</property>
                                             <property name="halign">start</property>
                                             <property name="valign">center</property>
                                             <property name="image-position">right</property>
@@ -9107,7 +9107,7 @@ a line.</property>
                                     <property name="receives-default">False</property>
                                     <property name="tooltip-text" translatable="yes">This option limits short words
 at the ends of paragraphs from 
-occuring on a line on their own.
+occurring on a line on their own.
 It also prevents short words at 
 the end of sentences from starting 
 on a new line.</property>
@@ -9277,7 +9277,7 @@ has been translated so far.</property>
                                     <child>
                                       <object class="GtkCheckButton" id="c_elipsizeMissingVerses">
                                         <property name="label" translatable="yes">Show '...'</property>
-                                        <property name="name">Show elipsis in place of missing verses</property>
+                                        <property name="name">Show ellipsis in place of missing verses</property>
                                         <property name="visible">True</property>
                                         <property name="can-focus">True</property>
                                         <property name="receives-default">False</property>
@@ -11019,7 +11019,7 @@ between notes that have been run together.</property>
                                         </child>
                                         <child>
                                           <object class="GtkSpinButton" id="s_internote">
-                                            <property name="name">Vertical Space Between Footnoes and xRefs</property>
+                                            <property name="name">Vertical Space Between Footnotes and xRefs</property>
                                             <property name="visible">True</property>
                                             <property name="can-focus">True</property>
                                             <property name="tooltip-text" translatable="yes">When Footnotes and Cross-references are not blended
@@ -11684,7 +11684,7 @@ yet, you may want to only include target
 cross-references to NT Books.
 
 If you select Books in "This Publication", 
-then only cross-references targetting 
+then only cross-references targeting 
 books in the list of Multiple Books on 
 the Basic tab will be included.</property>
                                                 <property name="halign">end</property>
@@ -11715,7 +11715,7 @@ yet, you may want to only include target
 cross-references to NT Books.
 
 If you select Books in "This Publication", 
-then only cross-references targetting 
+then only cross-references targeting 
 books in the list of Multiple Books on 
 the Basic tab will be included.</property>
                                                 <property name="halign">start</property>
@@ -12069,7 +12069,7 @@ various options to be used to generate the index.</property>
                                                         </child>
                                                         <child>
                                                           <object class="GtkCheckButton" id="c_strongsShowAll">
-                                                            <property name="label" translatable="yes">Show All Occurences</property>
+                                                            <property name="label" translatable="yes">Show All Occurrences</property>
                                                             <property name="name">Show Strong's numbers in cross-references</property>
                                                             <property name="visible">True</property>
                                                             <property name="can-focus">True</property>
@@ -15339,7 +15339,7 @@ headers and footers.</property>
                                         <property name="visible">True</property>
                                         <property name="can-focus">True</property>
                                         <property name="receives-default">True</property>
-                                        <property name="tooltip-text" translatable="yes">Click to immediately delete the currently highligted
+                                        <property name="tooltip-text" translatable="yes">Click to immediately delete the currently highlighted
 picture. No confirmation will be asked for!</property>
                                         <property name="valign">center</property>
                                         <property name="vexpand">False</property>
@@ -16045,7 +16045,7 @@ Location: </property>
 If your pictures are in a different folder, then enable
 this option and select a Picture Folder to be scanned
 in addition to the folders listed above. Note that ALL
-subfolders also getted scanned unless you explicity
+subfolders also getted scanned unless you explicitly
 enable the 'Exclude Subfolders' option.</property>
                                                     <property name="halign">start</property>
                                                     <property name="valign">center</property>
@@ -17078,7 +17078,7 @@ rotate=edge     - top to outside edge
 rotate=binding    - top to binding edge
 page=2     - select page 2 of multipage PDF
 
-Mulitple parameters should be space-separated:
+Multiple parameters should be space-separated:
 rotate=binding page=2</property>
                                                     <property name="halign">end</property>
                                                     <property name="label" translatable="yes">Extra:</property>
@@ -17103,7 +17103,7 @@ rotate=edge     - top to outside edge
 rotate=binding    - top to binding edge
 page=2     - select page 2 of multi-page PDF
 
-Mulitple parameters should be space-separated:
+Multiple parameters should be space-separated:
 rotate=binding page=2</property>
                                                     <property name="width-chars">0</property>
                                                   </object>
@@ -19076,7 +19076,7 @@ list all the book IDs here - only the special ones which
 need to share the same tab position.
 
 For example: PHM TIT; 1JN 2JN 3JN JUD</property>
-                                <property name="text">RUT 1SA; EZR NEH EST; ECC SNG; HOS JOL AMO OBA JON MIC; NAM HAB ZEP HAG ZEC MAL; GAL EPH PHP COL; 1TH 2TH 1TI 2TI TIT PHM; JAS 1PE 2PE 1JN 2JN 3JN JUD</property>
+                                <property name="text">RUT 1SA; EZR NEH EST; ECC SNG; HOS JOL AMO OBA JON MIC; NAME HAB ZEP HAG ZEC MAL; GAL EPH PHP COL; 1TH 2TH 1TI 2TI TIT PHM; JAS 1PE 2PE 1JN 2JN 3JN JUD</property>
                               </object>
                               <packing>
                                 <property name="left-attach">1</property>
@@ -24444,7 +24444,7 @@ the style of leader you wish to apply.</property>
 peripheral divisions (sub-sections) which 
 need to be inserted at the appropriate position
 between books. For example:
-  \periph Old Testament Introduction|id="intot"
+  \periph Old Testament Introduction|id="into"
   \periph New Testament Introduction|id="intnt"
   \periph Gospels Introduction|id="intgospels"</property>
                         <property name="halign">start</property>
@@ -28433,7 +28433,7 @@ output, but it may be less refined.
 
 PTXprint needs to rerun the typesetting
 process in order to ensure the Table of 
-Contents &amp; other dynamicly updated
+Contents &amp; other dynamically updated
 details are accurate.
 
 Shortcut: Ctrl-Q</property>
@@ -28685,7 +28685,7 @@ Shortcut: Ctrl-W</property>
                 <property name="margin-top">12</property>
                 <property name="margin-bottom">12</property>
                 <property name="label" translatable="yes">In order to print from a DBL bundle it is
-neccessary to unpack the bundle into
+necessary to unpack the bundle into
 a project folder - from where PTXprint
 can access the required files.</property>
               </object>
@@ -34054,7 +34054,7 @@ publications from one of the links.</property>
             </child>
             <child>
               <object class="GtkButton" id="btn_requestIllustrations2">
-                <property name="label" translatable="yes">Request Accesss... </property>
+                <property name="label" translatable="yes">Request Access... </property>
                 <property name="width-request">100</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
@@ -37264,7 +37264,7 @@ which already have Credit Overlay settings.</property>
                 </child>
                 <child>
                   <object class="GtkCheckButton" id="c_plCreditOverwrite">
-                    <property name="label" translatable="yes">Overwite any existing settings</property>
+                    <property name="label" translatable="yes">Overwrite any existing settings</property>
                     <property name="name">Image credit dialog: Overwrite existing values</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>

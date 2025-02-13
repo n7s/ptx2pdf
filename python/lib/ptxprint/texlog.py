@@ -2,7 +2,7 @@ import os, re, datetime
 
 categories = {"I": "Info", "W": "Warning", "E": "Error"}
 
-# Note: Multiple response values are possible - with the most likley problem first:
+# Note: Multiple response values are possible - with the most likely problem first:
 responses = {
     "R": "Rerun and see if that fixes it.",
     "U": "Fix usfm",
@@ -29,7 +29,7 @@ messages = [
     ("E","SUYT", r"! ERROR! Improper state; '.+?' should be 'L' 'R' or some other defined column\. Maybe there was output before columns were set up?"),
     ("E","EY", r"@pgfornamentDim not defined\. Probably the path from the TEXINPUTS environment variable does not include \\pgfOrnamentsObject"),
     ("E","U", r"Cannot continue"),
-    ("E","US", r"Cannot re-use undefined variable .+"),
+    ("E","US", r"Cannot reuse undefined variable .+"),
     ("E","S", r"Invalid key found when parsing .+? OrnamentScaleRef : '.+?' \(given: .+?\)"),
     ("E","UE", r"Pagecount \(\d+\) has exceeded \\MaxPages \(\d+\)\. This probably means something has gone wrong\. \(or you should increase MaxPages or MaxPagesPerChunk \(\d+\) for this job\)"),
     ("W","UP", r'Unknown picture size \".+?\", expected \"col\", \"span\", \"width\", \"page\" or \"full\"'),

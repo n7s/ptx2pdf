@@ -275,7 +275,7 @@ class orya(Indic):
             res = cls.indicSyls()
         return res
 
-class beng(ScriptSnippet):
+class being(ScriptSnippet):
     @classmethod
     def regexes(cls, view):
         res = [

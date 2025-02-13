@@ -52,7 +52,7 @@ AMO 1:15 2:16 3:15 4:13 5:27 6:14 7:17 8:14 9:15
 OBA 1:21
 JON 1:17 2:10 3:10 4:11
 MIC 1:16 2:13 3:12 4:13 5:15 6:16 7:20
-NAM 1:15 2:13 3:19
+NAME 1:15 2:13 3:19
 HAB 1:17 2:20 3:19
 ZEP 1:18 2:15 3:20
 HAG 1:15 2:23
@@ -125,7 +125,7 @@ PS2 1:7
 # ODA 1:19 2:43 3:10 4:19 5:12 6:8 7:20 8:37 9:22 10:9 11:11 12:15 13:4 14:46
 # PSS 1:8 2:37 3:12 4:25 5:19 6:6 7:10 8:34 9:11 10:8 11:9 12:6 13:12 14:10 15:13 16:15 17:46 18:12
 #-----------------------------------------------------
-# Obselete books used for LXX variant texts, in LXX only in PT 6, and obselete in PT 7, not used in English, Spanish or any other Bibles.  If these codes were used they were used for the wrong books and these definitions were not relevant
+# Obsolete books used for LXX variant texts, in LXX only in PT 6, and obsolete in PT 7, not used in English, Spanish or any other Bibles.  If these codes were used they were used for the wrong books and these definitions were not relevant
 JSA 1:18 2:24 3:17 4:24 5:15 6:27 7:26 8:35 9:27 10:43 11:23 12:24 13:33 14:15 15:63 16:10 17:18 18:28 19:51 20:9 21:45 22:34 23:16 24:33
 JDB 1:36 2:23 3:31 4:24 5:31 6:40 7:25 8:35 9:57 10:18 11:40 12:15 13:25 14:20 15:20 16:31 17:13 18:31 19:30 20:48 21:25
 TBS 1:22 2:14 3:17 4:21 5:23 6:19 7:17 8:21 9:6 10:14 11:19 12:22 13:18 14:15
@@ -298,8 +298,8 @@ JON 1:17 = JON 2:1
 JON 2:1-10 = JON 2:2-11
 MIC 5:1 = MIC 4:14
 MIC 5:2-15 = MIC 5:1-14
-NAM 1:15 = NAM 2:1
-NAM 2:1-13 = NAM 2:2-14
+NAME 1:15 = NAME 2:1
+NAME 2:1-13 = NAME 2:2-14
 ZEC 1:18-21 = ZEC 2:1-4
 ZEC 2:1-13 = ZEC 2:5-17
 MAL 4:1-6 = MAL 3:19-24
@@ -441,7 +441,7 @@ ESG 10:14 = ESG 10:3l
 # this to scroll correctly with the LXX.
 # S3Y is not present in the GRK, HEB, or LXX(Ralphs) text.
 # If a text has DAG present, this section must NOT be included in its versification file because
-# that would cause references in other texts to DAG to be redirected to a non-existant S3Y.
+# that would cause references in other texts to DAG to be redirected to a non-existent S3Y.
 S3Y 1:1-29 = DAG 3:24-52
 S3Y 1:30-31 = DAG 3:52-53
 S3Y 1:33 = DAG 3:54

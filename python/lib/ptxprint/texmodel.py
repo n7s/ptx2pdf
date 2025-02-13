@@ -61,7 +61,7 @@ _periphids = {
     "alphabetical contents": "alphacontents",
     "table of abbreviations": "abbreviations",
     "bible introduction": "intbible",
-    "old testament introduction": "intot",
+    "old testament introduction": "into",
     "pentateuch introduction": "intpent",
     "history introduction": "inthistory",
     "poetry introduction": "intpoetry",
@@ -87,7 +87,7 @@ _periphids = {
 class TexModel:
     _ptxversion = 4
     _peripheralBooks = ["FRT", "INT"]
-    _bookinserts = (("GEN-REV", "intbible"), ("GEN-MAL", "intot"), ("GEN-DEU", "intpent"), ("JOS-EST", "inthistory"),
+    _bookinserts = (("GEN-REV", "intbible"), ("GEN-MAL", "into"), ("GEN-DEU", "intpent"), ("JOS-EST", "inthistory"),
                     ("JOB-SNG", "intpoetry"), ("ISA-MAL", "intprophecy"), ("TOB-LAO", "intdc"), 
                     ("MAT-REV", "intnt"), ("MAT-JHN", "intgospels"), ("ROM-PHM", "intepistles"), ("HEB-REV", "intletters"))
     _fonts = {
@@ -865,7 +865,7 @@ class TexModel:
                         sys.argv = sys._argv
                         hasrun = True
             if not hasrun:
-                checkoutput(cmd) # dont't pass cmd as list when shell=True
+                checkoutput(cmd) # don't pass cmd as list when shell=True
         return outfpath
 
     def _getText(self, data, doc, bk, logmsg=""):
@@ -1582,9 +1582,9 @@ class TexModel:
                 break
             glossentries.update(xtraglossentries)
             logger.debug(f"glossarydepth={count}")
-        missings = [ge for ge in glossentries if ge not in glosstext]
-        if len(missings)>0:
-            logger.warn(f"Glossary entries for {','.join(missings)} wanted, but not found in glossary.")
+        missing = [ge for ge in glossentries if ge not in glosstext]
+        if len(missing)>0:
+            logger.warn(f"Glossary entries for {','.join(missing)} wanted, but not found in glossary.")
         else:
             logger.debug(f"All wanted glossary entries found.")
         logger.debug(f"{glossentries=}, {ge=}")

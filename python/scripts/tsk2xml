@@ -10,7 +10,7 @@ class TSKBooks(BaseBooks):
         "2ki": "2KI", "1ch": "1CH", "2ch": "2CH", "ezr": "EZR", "ne": "NEH", "es": "EST",
         "job": "JOB", "ps": "PSA", "pr": "PRO", "ec": "ECC", "so": "SNG", "isa": "ISA",
         "jer": "JER", "la": "LAM", "eze": "EZE", "da": "DAN", "ho": "HOS", "joe": "JOL",
-        "am": "AMO", "ob": "OBA", "jon": "JON", "mic": "MIC", "na": "NAM", "hab": "HAB",
+        "am": "AMO", "ob": "OBA", "jon": "JON", "mic": "MIC", "na": "NAME", "hab": "HAB",
         "zec": "ZEC", "mal": "MAL",
         "mt": "MAT", "mr": "MRK", "lu": "LUK", "joh": "JHN", "ac": "ACT", "ro": "ROM",
         "1co": "1CO", "2co": "2CO", "ga": "GAL", "eph": "EPH", "php": "PHP", "col": "COL",

@@ -361,7 +361,7 @@ class StyleEditorView(StyleEditor):
     def normalizeSearchKey(self, key):
         return key.lstrip('\\').lower()
 
-    def tree_search(self, model, colmn, key, rowiter):
+    def tree_search(self, model, column, key, rowiter):
         root = model.get_iter_first()
         it = self._searchMarker(model, root, self.normalizeSearchKey(key))
         # doselect = True
@@ -466,9 +466,9 @@ class StyleEditorView(StyleEditor):
 
         stype = self.getval(self.marker, 'StyleType')
         _showgrid = {'Para': (True, True, False), 'Char': (False, True, False), 'Note': (True, True, True)}
-        visibles = _showgrid.get(stype[:4] if stype is not None else "",(True, True, False))
+        visible = _showgrid.get(stype[:4] if stype is not None else "",(True, True, False))
         for i, w in enumerate(('Para', 'Char', 'Note')):
-            self.builder.get_object("ex_sty"+w).set_expanded(visibles[i])
+            self.builder.get_object("ex_sty"+w).set_expanded(visible[i])
 
         self.builder.get_object("ex_styTable").set_expanded("tc" in self.marker)
         if "tc" in self.marker:

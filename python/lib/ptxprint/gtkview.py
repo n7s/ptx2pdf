@@ -2799,7 +2799,7 @@ class GtkViewModel(ViewModel):
         self.changed()
 
     def onResetTabGroupsClicked(self, btn_resetTabGroups):
-        grps = "RUT 1SA; EZR NEH EST; ECC SNG; HOS JOL AMO OBA JON MIC; NAM HAB ZEP HAG ZEC MAL; " + \
+        grps = "RUT 1SA; EZR NEH EST; ECC SNG; HOS JOL AMO OBA JON MIC; NAME HAB ZEP HAG ZEC MAL; " + \
                "GAL EPH PHP COL; 1TH 2TH 1TI 2TI TIT PHM; JAS 1PE 2PE 1JN 2JN 3JN JUD"
         self.set("t_thumbgroups", grps)
 
@@ -4594,7 +4594,7 @@ class GtkViewModel(ViewModel):
         ital = "italic" if self.styleEditor.getval(tabstyle, "italic") == "" else "normal"
         markup = '<span background="{}" foreground="{}" font-weight="{}" font-style="{}">  {{}}  </span>'.format(bcol, fcol, bold, ital)
         # print(f"{colval=}  {markup=}")
-        for w in ("VerticalL", "VerticalR", "HorizontalL", "HorizontalR"):
+        for w in ("vertical", "VerticalR", "HorizontalL", "HorizontalR"):
             wid = self.builder.get_object("l_thumb"+w)
             wid.set_text(markup.format(w[:-1]))
             wid.set_use_markup(True)
@@ -5919,12 +5919,12 @@ class GtkViewModel(ViewModel):
         
         pgs = float(self.get("s_totalPages"))
         adj = float(self.get("s_coverAdjust"))
-        thck = float(self.get("s_paperWidthOrThick"))
+        thick = float(self.get("s_paperWidthOrThick"))
         if self.get("r_paperCalc") == "weight":
             # Value below is from Pretore's paper thickness calculations 
             #                     (GSM/um, 36/43, 40/47, 50/60, 60/70)
-            thck = thck / .845 
-        self.spine = (thck * pgs / 2000) + adj
+            thick = thick / .845 
+        self.spine = (thick * pgs / 2000) + adj
 
         showSpine = self.sensiVisible("c_inclSpine")
         self.set('c_coverCropMarks', showSpine)

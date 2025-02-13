@@ -99,7 +99,7 @@
 \newwrite\n@tepages
 \newread\n@tepagetest
 \def\@nputn@tepages{
-    \openin\n@tepagetest = "\j@bname.notepages" % test if notepages file exists from prev run
+    \opening\n@tepagetest = "\j@bname.notepages" % test if notepages file exists from prev run
     \ifeof\n@tepagetest \let\n@xt\relax
     \else \def\n@xt{\input "\j@bname.notepages"}
     \fi \closein\n@tepagetest

@@ -210,7 +210,7 @@
 \def\n@ffin#1{} %  Utility function
 
 \def\includeifpresent#1{%
-  \openin\t@mpfile="#1"
+  \opening\t@mpfile="#1"
   \ifeof\t@mpfile\closein\t@mpfile
     \immediate\write-1{Optional file "#1" Cannot be found}%
     \let\n@xt\relax

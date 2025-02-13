@@ -1031,11 +1031,11 @@ class RunJob:
             it = range(box[start], box[end])
         otheri = 0 if (start & 1) else 1
         others = box[otheri]
-        othere = box[otheri+2]
+        other = box[otheri+2]
         for t in it:
-            score = sum(fn(t, i) for i in range(others, othere))
+            score = sum(fn(t, i) for i in range(others, other))
             # 8 = 256 * 5% (approx)
-            if score > 8 * (othere - others):
+            if score > 8 * (other - others):
                 break
         return t
 

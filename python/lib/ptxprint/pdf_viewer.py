@@ -688,7 +688,7 @@ class PDFViewer:
                         formatted_pages = list(map(str, ufPages))
                         formatted_pages[curr_pos] = f"<{formatted_pages[curr_pos]}>"
                         pgs = "  ".join(formatted_pages)
-                        elipsis = ""  # No "(of X)" when all numbers are shown
+                        ellipsis = ""  # No "(of X)" when all numbers are shown
                     else:
                         # Determine sliding window bounds
                         start_idx = max(0, curr_pos - window_size)
@@ -706,12 +706,12 @@ class PDFViewer:
                             formatted_pages.append("...")
 
                         pgs = "  ".join(formatted_pages)
-                        elipsis = f" (of {total_count})"  # Show count only when ellipses are present
+                        ellipsis = f" (of {total_count})"  # Show count only when ellipses are present
 
                     if is_rtl or self.model.lang == 'ar_SA':
                         pgs = "  ".join(reversed(pgs.split("  ")))  # Reverse order of numbers in RTL mode
 
-                    seekText = _("Show {} underfilled page.").format(self.swap4rtl(action)) + "\n" + pgs + elipsis
+                    seekText = _("Show {} underfilled page.").format(self.swap4rtl(action)) + "\n" + pgs + ellipsis
                 o.set_tooltip_text(seekText)
         
     def on_button_press(self, widget, event):

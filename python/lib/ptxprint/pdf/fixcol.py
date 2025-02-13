@@ -296,7 +296,7 @@ class PageDuoToneStateRead(PdfStreamParser):
         self.values[1] = max(self.values[1], results[1])
 
 def compress(mylist):
-    flate = PdfName.FlateDecode
+    flat = PdfName.FlateDecode
     for obj in streamobjects(mylist):
         ftype = obj.Filter
         if ftype is not None:
@@ -311,7 +311,7 @@ def compress(mylist):
             newstr = convert_load(zlib.compress(convert_store(oldstr)))
         if len(newstr) < len(oldstr) + 30:
             obj.stream = newstr
-            obj.Filter = flate
+            obj.Filter = flat
             obj.DecodeParms = None
 
 def fixpdfcmyk(trailer, threshold=1., **kw):
@@ -457,7 +457,7 @@ def fixhighlights(trailer, parlocs=None):
             else:
                 newannots.setdefault(None, []).append(ann)
         pannots = PdfArray()
-        pres = []
+        press = []
         for k, vannots in newannots.items():
             if k is None:
                 page.Annots.extend(vannots)
@@ -508,11 +508,11 @@ def fixhighlights(trailer, parlocs=None):
                     for p in brect[1:]:
                         action.append("{} {} l".format(simplefloat(p[0]), simplefloat(p[1])))
                     action.append("h f")
-                    pres.append("\n".join(action))
-        if len(pres):
-            pres.insert(0, "q")
-            pres.append("Q")
-            page.Contents.insert(0, PdfDict(indirect=True, stream="\n".join(pres)))
+                    press.append("\n".join(action))
+        if len(press):
+            press.insert(0, "q")
+            press.append("Q")
+            page.Contents.insert(0, PdfDict(indirect=True, stream="\n".join(press)))
         page.Annots = pannots if len(pannots) else None
 
 def pagebbox(infile, pagenum=0):
